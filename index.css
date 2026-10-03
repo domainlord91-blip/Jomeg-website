@@ -1,0 +1,10 @@
+@import url("styles.css");
+
+.home-page .hero-stamp {
+  animation: stamp-arrive .7s .4s both;
+}
+
+@keyframes stamp-arrive {
+  from { opacity: 0; transform: rotate(-8deg) scale(.82); }
+  to { opacity: 1; transform: rotate(10deg) scale(1); }
+}

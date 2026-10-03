@@ -1,0 +1,5 @@
+@import url("styles.css");
+
+.about-page .page-hero-image {
+  object-position: center 42%;
+}

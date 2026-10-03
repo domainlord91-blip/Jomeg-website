@@ -1,0 +1,8 @@
+@import url("styles.css");
+
+.history-page .history-date {
+  display: inline-block;
+  padding: 7px 10px;
+  border-left: 2px solid var(--coral);
+  background: rgba(255, 255, 255, .7);
+}

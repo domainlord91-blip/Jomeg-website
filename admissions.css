@@ -1,0 +1,145 @@
+@import url("styles.css");
+
+.admissions-page .admission-step {
+  transition: background-color .2s, transform .2s;
+}
+
+.admissions-page .admission-step:hover {
+  transform: translateY(-3px);
+}
+
+.class-level-section {
+  padding-block: 72px;
+  background: #fff;
+}
+
+.class-level-heading {
+  margin-bottom: 32px;
+}
+
+.class-level-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.class-level {
+  padding: 24px 28px 24px 0;
+  border-right: 1px solid var(--line);
+}
+
+.class-level + .class-level {
+  padding-left: 28px;
+}
+
+.class-level:last-child {
+  border-right: 0;
+}
+
+.class-level h3 {
+  margin: 0 0 10px;
+  color: var(--forest);
+  font: 700 17px var(--display);
+}
+
+.class-level p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.class-level .class-fee {
+  margin-top: 12px;
+  color: var(--forest);
+  font-weight: 700;
+}
+
+.bank-payment-section {
+  padding-block: 76px;
+  background: #f0ebe1;
+}
+
+.bank-payment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 9%;
+}
+
+.bank-payment-copy .section-heading {
+  max-width: 440px;
+  margin-bottom: 18px;
+}
+
+.bank-payment-copy > p:last-child,
+.bank-payment-note {
+  max-width: 460px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.bank-payment-details dl {
+  margin: 0 0 22px;
+}
+
+.bank-payment-details dl > div {
+  display: grid;
+  grid-template-columns: minmax(110px, .8fr) 1.2fr;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px solid #d8d5ca;
+}
+
+.bank-payment-details dt {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.bank-payment-details dd {
+  margin: 0;
+  color: var(--forest);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.bank-payment-note {
+  margin: 12px 0 0;
+  font-size: 11px;
+}
+
+@media (max-width: 620px) {
+  .class-level-section {
+    padding-block: 58px;
+  }
+
+  .bank-payment-section {
+    padding-block: 58px;
+  }
+
+  .bank-payment-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bank-payment-details dl > div {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .class-level-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .class-level,
+  .class-level + .class-level {
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .class-level:last-child {
+    border-bottom: 0;
+  }
+}
